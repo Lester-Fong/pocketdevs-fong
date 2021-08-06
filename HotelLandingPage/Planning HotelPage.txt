@@ -1,0 +1,8 @@
+First is the navbar and the header
+
+*feedbacks - swiper
+*Header images - swiper
+*book now <aside> - display fixed
+*Paralax Effect for the about Us 
+
+Home GuestRooms Restaurant Club Wellness Blogs

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./HotelLandingPage/imgs/belowView.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 90%;
+  max-width: 500px;
+  border: 2px solid rgba(204, 204, 204, 0.199);
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: relative;
+}
+
+form * {
+  display: block;
+}
+
+input {
+  border: 2px solid #212529;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+label {
+  color: #212529;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+button {
+  float: right;
+  background-color: #555;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 10px;
+  transition: opacity 0.9ms ease;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #212529;
+  font-family: "Oswald", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-family: "Oswald";
+}
+
+.success {
+  background-color: #d8d520;
+  color: #4272a9;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-family: "Oswald";
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.create {
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 7px 10px;
+  color: #292e33;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.create:hover {
+  text-decoration: underline;
+}
