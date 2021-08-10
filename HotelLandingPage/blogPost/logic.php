@@ -9,7 +9,7 @@ if(!$conn) {
 $sql = "SELECT * FROM data";
 $query = mysqli_query($conn, $sql);
 
-
+ 
 if (isset($_REQUEST["new_post"])) {
     $title = $_REQUEST["title"];
     $content = $_REQUEST["content"];

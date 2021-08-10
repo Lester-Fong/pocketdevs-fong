@@ -65,7 +65,7 @@ body {
   height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -79,22 +79,37 @@ body {
   align-self: center;
   color: rgb(54, 8, 56);
   font-size: 1.1rem;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-text {
-  padding: 0 0.3em;
+  padding: 0 0.6em;
   font-size: 1em;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  flex-basis: 60%;
 }
 
 .card-anchor {
-  padding: 0.5em 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 1.2em;
   font-size: 0.8rem;
   background-color: rgb(54, 8, 56);
   color: wheat;
   text-decoration: none;
   font-family: "Oswald";
   border-radius: 10px;
+  flex-basis: 15%;
+  margin: 0.5em;
 }
 
 /* ----VIEW----- */
@@ -110,11 +125,6 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 75vh;
 }
 
 .view-title {
@@ -124,6 +134,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 2px solid #152535;
 }
 
 .view-btns {
@@ -131,6 +142,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: flex-end;
+  margin-bottom: 0.5em;
 }
 
 .view-btns .edit,
@@ -163,6 +175,7 @@ body {
   color: #fff;
   font-size: 1.3rem;
   font-family: "Oswald";
+  margin: 1em 0;
 }
 
 .blog-title .a-logo {
