@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald";
+}
+
+img {
+  width: 120px;
+}
+
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  height: 100vh; */
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea,
+button {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input,
+textarea {
+  width: min(900px, 90%);
+  padding: 1em;
+  background-color: #edf2f4;
+  border: #212529;
+}
+
+textarea {
+  height: 200px;
+}
+
+.btn {
+  justify-self: start;
+  align-self: flex-end;
+  margin-right: 17.4em;
+  padding: 1em 2em;
+  border-radius: 5px;
+  background-color: #212529e5;
+  color: rgb(255, 245, 224);
+  border: none;
+  font-family: 1rem;
+  letter-spacing: 1px;
+  font-family: "Oswald";
+}
+
+.btn:hover {
+  background-color: #212529;
+  color: wheat;
+}

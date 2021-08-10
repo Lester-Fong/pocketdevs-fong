@@ -24,7 +24,6 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
         #hashing the PASSWORD
         $pass = md5($pass);
-
         
         $sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
 

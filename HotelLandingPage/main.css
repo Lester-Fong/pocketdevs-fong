@@ -366,27 +366,54 @@ aside .ul button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: url("./imgs/bg-blogs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .blog-title {
-  margin: 2em 0;
   font-size: 1.5rem;
   font-family: "Kaushan Script", cursive;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: min(1100px, 90%);
+  margin: 1em 0;
+}
+
+.blog-title a {
+  font-size: 1rem;
+  color: wheat;
+  text-decoration: none;
+  font-family: "Oswald";
+  border-radius: 10px;
+  background-color: #152535;
+  padding: 0.6em 2em;
+}
+
+.blog-title a:hover {
+  background-color: #183552;
+  color: rgb(243, 236, 223);
 }
 
 .blog-container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 700px;
+  height: 95vh;
+  overflow-y: scroll;
   margin: 0 auto;
   background: #edf2f4;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1em;
   display: flex;
   justify-self: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -394,8 +421,6 @@ aside .ul button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-basis: 100%;
-  margin: 0 0.5em;
   font-size: 0.8rem;
 }
 
@@ -412,6 +437,10 @@ aside .ul button:hover {
 .blog-article {
   height: 100%;
   margin-bottom: 1em;
+}
+
+.blog-article p {
+  font-size: 0.9rem;
 }
 
 .blog-post {
@@ -441,6 +470,11 @@ aside .ul button:hover {
   background-color: #212529;
   color: #edf2f4;
   margin: 1em 0;
+}
+
+.alert {
+  background-color: #212529;
+  color: rgb(149, 197, 52);
 }
 
 .blog-post button:hover {
@@ -702,46 +736,6 @@ footer ul {
     padding: 0.5em 0;
   }
 
-  /* -----------BLOGSSS------- */
-
-  #blogs {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blog-title {
-    margin: 2em 0;
-    font-size: 1.5rem;
-    font-family: "Kaushan Script", cursive;
-  }
-
-  .blog-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-basis: 100%;
-    margin: 0 0.5em;
-    font-size: 0.8rem;
-  }
-
-  .blog-post {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .h1-blog {
-    flex-basis: 100%;
-  }
-
   /* -----Footerr----- */
 
   .footer-center {
@@ -867,84 +861,6 @@ footer ul {
 
   .hide {
     display: none;
-  }
-
-  /* -----------BLOGSSS------- */
-
-  #blogs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .blog-title {
-    margin: 2em 0;
-    font-size: 1.5rem;
-    font-family: "Kaushan Script", cursive;
-  }
-
-  .blog-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-basis: 100%;
-    margin: 0 0.5em;
-    font-size: 0.8rem;
-  }
-
-  .pics {
-    flex-basis: 100%;
-  }
-
-  .pics img {
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .blog-article {
-    height: 100%;
-    margin-bottom: 1em;
-  }
-
-  .blog-post {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .h1-blog {
-    flex-basis: 100%;
-  }
-
-  .blog-post h1 {
-    padding: 1em 0;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-  }
-
-  .blog-post button {
-    padding: 0.3em 0;
-    width: 50%;
-    font-size: 1.2rem;
-    border: 0;
-    border-radius: 4px;
-    background-color: #212529;
-    color: #edf2f4;
-    margin: 1em 0;
-  }
-
-  .blog-post button:hover {
-    color: #8d99ae;
   }
 
   /* -----Footerr----- */
@@ -1206,93 +1122,6 @@ footer ul {
 
   .hide {
     display: none;
-  }
-  /* -----------BLOGSSS------- */
-
-  #blogs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .blog-title {
-    margin: 2em 0;
-    font-size: 1.5rem;
-    font-family: "Kaushan Script", cursive;
-  }
-
-  .blog-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #edf2f4;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: flex;
-    justify-self: center;
-    align-items: center;
-  }
-
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-basis: 100%;
-    margin: 0 0.5em;
-    font-size: 0.8rem;
-  }
-
-  .pics {
-    flex-basis: 100%;
-  }
-
-  .pics img {
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .blog-article {
-    height: 100%;
-    margin-bottom: 1em;
-  }
-
-  .blog-post {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .h1-blog {
-    flex-basis: 100%;
-  }
-
-  .blog-post h1 {
-    padding: 1em 0;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-  }
-
-  .blog-post button {
-    padding: 0.3em 0;
-    width: 50%;
-    font-size: 1.2rem;
-    border: 0;
-    border-radius: 4px;
-    background-color: #212529;
-    color: #edf2f4;
-    margin: 1em 0;
-  }
-
-  .blog-post button:hover {
-    color: #8d99ae;
   }
 
   /* -----Footerr----- */
