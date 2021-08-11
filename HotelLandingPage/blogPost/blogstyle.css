@@ -46,6 +46,18 @@ body {
   color: rgb(243, 236, 223);
 }
 
+.blog-title .blogs h1,
+.blog-title .blogs {
+  font-family: "Kaushan Script", cursive;
+  background-color: transparent;
+  color: #152535;
+  font-size: 2rem;
+}
+
+.blog-title .blogs:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
 /* blog container */
 
 .blog-container {

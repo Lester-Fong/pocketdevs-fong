@@ -18,7 +18,11 @@ include "./logic.php"
 <body>
 <section id="blogs">
         <div class="blog-title">
-            <h1>Blogs</h1>
+            <?php if(isset($_REQUEST["index"])) {?>
+                <a class="blogs" href="../index.php"><h1>Blogs</h1></a>
+            <?php } else {?>   
+                <a class="blogs" href="../home.php"><h1>Blogs</h1></a>
+            <?php } ?> 
 
             <?php if (isset($_REQUEST["info"])) {?>
                 <?php if ($_REQUEST["info"] == "added") {?>

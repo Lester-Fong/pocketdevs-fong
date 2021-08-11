@@ -13,11 +13,6 @@ img {
 }
 
 .container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid red;
-  height: 100vh; */
   text-align: center;
 }
 
@@ -26,7 +21,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red; */
 }
 
 form {
@@ -74,3 +68,5 @@ textarea {
   background-color: #212529;
   color: wheat;
 }
+
+

@@ -21,7 +21,7 @@
         </div>
         <div class="navigation">
             <ul class="ul-nav">
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#features">Guest Rooms</a></li>
                 <li><a href="#features">Restaurant</a></li>
                 <li><a href="#features">Clubs&Bars</a></li>
