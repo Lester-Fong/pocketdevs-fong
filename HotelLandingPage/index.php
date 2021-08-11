@@ -357,7 +357,7 @@
     <section id="blogs">
         <div class="blog-title">
             <h1>Blogs</h1>
-            <a href="../index.php">+ Create a New Post</a>
+            <a href="./blogPost/homeBlog.php?index">+ Create a New Post</a>
         </div>
 
 

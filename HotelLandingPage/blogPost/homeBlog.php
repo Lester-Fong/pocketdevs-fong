@@ -36,8 +36,16 @@ include "./logic.php"
                 <?php } ?>
             <?php }?>
            
+            <?php if (isset($_REQUEST["index"])) {?>
+                <a href="../../index.php">+ Create a New Post</a>
+            <?php } else { ?>
+                <a href="./createBLog.php">+ Create a New Post</a>
+            <?php } ?>
 
-            <a href="./createBlog.php">+ Create a New Post</a>
+            
+
+
+
         </div>
         <div class="blog-container">
             <div class="wrapper">
@@ -45,7 +53,11 @@ include "./logic.php"
                 <div class="card">
                     <h3 class="card-title"><?php echo $q['title'];?></h3>
                     <p class="card-text"><?php echo $q['content'];?></p>
-                    <a href="./view.php?id=<?php echo $q['id']; ?>" class="card-anchor">Read More &rarr;</a>
+                    <?php if (isset($_REQUEST["index"])) {?>
+                         <a href="./view.php?id=<?php echo $q['id'];?>&index" class="card-anchor">Read More &rarr;</a>
+                    <?php } else { ?>
+                         <a href="./view.php?id=<?php echo $q['id'];?>" class="card-anchor">Read More &rarr;</a>
+                    <?php } ?>
                 </div>
                 <?php }?>
             </div>

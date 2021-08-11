@@ -17,24 +17,38 @@ include "./logic.php"
 </head>
 <body>
 <section id="blogs">
-        <div class="blog-title">
-            <h1>Blogs</h1>
-            <a class="a-logo" href="../index.html"><img class="view-logo" src="./imgs/fongtel-logo-bgRemoved.png" alt=""></a>
-        </div>
+    <div class="blog-title">
+        <h1>Blogs</h1>
+        <?php if(isset($_REQUEST["index"])) {?>
+            <a class="a-logo" href="../index.php"><img class="view-logo" src="./imgs/fongtel-logo-bgRemoved.png" alt=""></a>
+        <?php } else {?>   
+            <a class="a-logo" href="../home.php"><img class="view-logo" src="./imgs/fongtel-logo-bgRemoved.png" alt=""></a>
+        <?php } ?>  
+    </div>
         <div class="blog-container">
             <div class="view-card">
                 <?php foreach($query as $q) {?>
                     <div class="view-title">
                         <h1><?php echo $q['title']; ?></h1>
 
-                        <div class="view-btns">
-                            <a class="edit" href="edit.php?id=<?php echo $q['id']; ?>">Edit</a>
+                        <?php if(isset($_REQUEST["index"])) {?>
+                            <div class="view-btns">
+                                <a class="edit" href="../../index.php">Edit</a>
+                                <form method="post">
+                                    <a class="delete" href="../../index.php">Delete</a>
+                                </form>
+                            </div>
+                        <?php } else { ?>
+                            <div class="view-btns">
+                                <a class="edit" href="edit.php?id=<?php echo $q['id']; ?>">Edit</a>
 
-                            <form method="post">
-                                <input type="text" hidden name="id" value="<?php echo $q['id'];?>">
-                                <button class="delete" name="delete">Delete</button>
-                            </form>
-                        </div>
+                                <form method="post">
+                                    <input type="text" hidden name="id" value="<?php echo $q['id'];?>">
+                                    <button class="delete" name="delete">Delete</button>
+                                </form>
+                            </div>
+                        <?php } ?>
+
                     </div>
                     <div class="view-text">
                         <p><?php echo $q['content']; ?></p>
