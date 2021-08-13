@@ -19,8 +19,8 @@ include "./logic.php"
 
        <?php foreach($query as $q){ ?>
             <form action="" method="post">
-                <input type="text" name="title" value="<?php echo $q['title']; ?>" class="title" placeholder="Blog Title">
-                <textarea class="txtarea" name="content" placeholder="Post here..."><?php echo $q['content']; ?></textarea>
+                <input type="text" required name="title" value="<?php echo $q['title']; ?>" class="title" placeholder="Blog Title">
+                <textarea class="txtarea" required name="content" placeholder="Post here..."><?php echo $q['content']; ?></textarea>
                 <button name="update" class="btn">Update Post</button>
             </form>
         <?php }?>
