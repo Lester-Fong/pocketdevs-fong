@@ -14,7 +14,7 @@ include "./logic.php"
 </head>
 <body>
     <div class="container">
-        <img src="../imgs/fongtel-logo-bgRemoved.png" alt="">
+       <a class="a-logo" href="../home.php"><img class="view-logo" src="./imgs/fongtel-logo-bgRemoved.png" alt=""></a>
        <div class="wrapper">
 
        <?php foreach($query as $q){ ?>
