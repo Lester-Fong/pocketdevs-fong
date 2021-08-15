@@ -26,7 +26,7 @@
                 <li><a href="#features">Restaurant</a></li>
                 <li><a href="#features">Clubs&Bars</a></li>
                 <li><a href="#features">Wellness</a></li>
-                <li><a href="./blogPost/homeBlog.php">Blogs</a></li>
+                <li><a href="./blogPost/homeBlog.php?index">Blogs</a></li>
                 <li><a href="../index.php">Log In</a></li>
                 
             </ul>
