@@ -30,17 +30,18 @@ if (isset($_REQUEST['id'])) {
     $query = mysqli_query($conn, $sql);
 };  
 
-
+// todo if the title or content are the same it should be wrong 
 if (isset($_REQUEST['update'])) {
     $id = $_REQUEST['id'];
     $title = $_REQUEST["title"];
     $content = $_REQUEST["content"];
 
-    $sql = "UPDATE data SET title = '$title', content = '$content' WHERE id = $id ";
-    $query = mysqli_query($conn, $sql);
 
-    header ("Location: ./homeBlog.php?info=updated"); 
-    exit;
+        $sql = "UPDATE data SET title = '$title', content = '$content' WHERE id = $id ";
+        $query = mysqli_query($conn, $sql);
+
+        header ("Location: ./homeBlog.php?info=updated"); 
+        exit;
 }
 
 if (isset($_REQUEST['delete'])) {

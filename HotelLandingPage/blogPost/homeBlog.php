@@ -45,12 +45,11 @@ include "./logic.php"
             <?php } else { ?>
                 <a href="./createBLog.php">+ Create a New Post</a>
             <?php } ?>
-
-            
-
-
-
         </div>
+
+
+
+        
         <div class="blog-container">
             <div class="wrapper">
                 <?php foreach($query as $q) {?>
