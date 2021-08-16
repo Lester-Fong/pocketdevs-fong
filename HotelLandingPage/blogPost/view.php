@@ -35,7 +35,7 @@ include "./logic.php";
                 <?php foreach($query as $q) {?>
                     <div class="view-title">
                         <h1><?php echo $q['title']; ?></h1>
-                        <h5 class="card-user">created by: <?php echo $q['user_name'];?></h5>
+                        <h5 class="card-user">Created by: <?php echo $q['user_name'];?></h5>
                         <?php if(isset($_REQUEST['index'])) { ?>
                             <div class="view-btns">
                                 <a class="edit" href="../../index.php">Edit</a>

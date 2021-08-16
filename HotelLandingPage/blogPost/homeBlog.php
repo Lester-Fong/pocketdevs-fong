@@ -56,7 +56,7 @@ include "./logic.php"
                 <?php foreach($query as $q) {?>
                 <div class="card">
                     <h3 class="card-title"><?php echo $q['title'];?></h3>
-                    <h5 class="card-user"><?php echo $q['user_name'];?></h5>
+                    <h5 class="card-user">By: <?php echo $q['user_name'];?></h5>
                     <p class="card-text"><?php echo $q['content'];?></p>
                     <?php if (isset($_REQUEST["index"])) {?>
                          <a href="./view.php?id=<?php echo $q['id'];?>&index" class="card-anchor">Read More &rarr;</a>
