@@ -1,5 +1,6 @@
 <?php 
-include "./logic.php"
+
+include "./logic.php";
 ?>
 
 <!DOCTYPE html>
@@ -34,18 +35,19 @@ include "./logic.php"
                 <?php foreach($query as $q) {?>
                     <div class="view-title">
                         <h1><?php echo $q['title']; ?></h1>
-
-                        <?php if(isset($_REQUEST["index"])) {?>
+                        <h5 class="card-user">created by: <?php echo $q['user_name'];?></h5>
+                        <?php if(isset($_REQUEST['index'])) { ?>
                             <div class="view-btns">
                                 <a class="edit" href="../../index.php">Edit</a>
                                 <form method="post">
                                     <a class="delete" href="../../index.php">Delete</a>
                                 </form>
                             </div>
+                        <?php } else if($q['user_name'] !== $_SESSION['user_name']) {?>
+                            <div></div>
                         <?php } else { ?>
                             <div class="view-btns">
                                 <a class="edit" href="edit.php?id=<?php echo $q['id']; ?>">Edit</a>
-
                                 <form method="post">
                                     <input type="text" hidden name="id" value="<?php echo $q['id'];?>">
                                     <button class="delete" name="delete">Delete</button>
